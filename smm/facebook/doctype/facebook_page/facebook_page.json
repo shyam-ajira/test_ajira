@@ -1,0 +1,84 @@
+{
+    "actions": [],
+    "naming_rule": "By \"Naming Series\" field",
+    "autoname": "naming_series:naming_series",
+    "allow_rename": 0,
+    "creation": "2025-01-27 13:17:20.119526",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+      "naming_series",
+      "page_name",
+      "page_id",
+      "access_token",
+      "page_category",
+      "is_active"
+    ],
+    "fields": [
+      {
+        "fieldname": "naming_series",
+        "fieldtype": "Select",
+        "label": "Series",
+        "no_copy": 1,
+        "options": "FBP-.YY.-.###",
+        "print_hide": 1,
+        "reqd": 1,
+        "set_only_once": 1,
+        "hidden": 1,
+        "default": "FBP-.YY.-.###"
+      },
+      {
+        "fieldname": "page_name",
+        "fieldtype": "Data",
+        "label": "Page Name",
+        "reqd": 1
+      },
+      {
+        "fieldname": "page_id",
+        "fieldtype": "Data",
+        "label": "Page ID",
+        "reqd": 1
+      },
+      {
+        "fieldname": "access_token",
+        "fieldtype": "Password",
+        "label": "Access Token",
+        "reqd": 1
+      },
+      {
+        "fieldname": "page_category",
+        "fieldtype": "Data",
+        "label": "Page Category"
+      },
+      {
+        "fieldname": "is_active",
+        "fieldtype": "Check",
+        "label": "Is Active",
+        "default": 1
+      }
+    ],
+    "index_web_pages_for_search": 1,
+    "modified": "2025-01-27 13:17:20.119526",
+    "modified_by": "Administrator",
+    "module": "facebook",
+    "name": "Facebook Page",
+    "owner": "Administrator",
+    "permissions": [
+      {
+        "create": 1,
+        "delete": 1,
+        "email": 1,
+        "export": 1,
+        "print": 1,
+        "read": 1,
+        "report": 1,
+        "role": "System Manager",
+        "share": 1,
+        "write": 1
+      }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+  }
+  
